@@ -151,6 +151,13 @@ const showingNavigationDropdown = ref(false);
                         >
                             Dashboard
                         </ResponsiveNavLink>
+
+                        <ResponsiveNavLink 
+                            :href="route('patients.index')" 
+                            :active="route().current('patients.*')"
+                        >
+                            Data Pasien
+                        </ResponsiveNavLink>
                     </div>
 
                     <!-- Responsive Settings Options -->
